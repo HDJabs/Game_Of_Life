@@ -88,9 +88,11 @@ public class GameOfLife {
         fillBoard(demo);
         randomBoard();
         printBoard();
-        Scanner input = new Scanner(System.in);
-        String inputCode;
-        while(true){
+        TimedScanner scanner = new TimedScanner();
+        scanner.start();
+        //Scanner input = new Scanner(System.in);
+        //String inputCode;
+        /*while(true){
             update();
             printBoard();
             Thread.sleep(1000);
@@ -99,7 +101,7 @@ public class GameOfLife {
             //System.out.println();
             //if(inputCode.charAt(0)=='p')
             //    System.out.println("Puase [SPACE] acknowledged");
-        }
+        }*/
     }
 
     public static void printBoard(){
